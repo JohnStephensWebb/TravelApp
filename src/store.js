@@ -1,6 +1,6 @@
 
 import { AsyncStorage } from 'react-native';
-import * as firebase from 'firebase';
+import firebase from 'firebase';
 
 const firebaseConfig = {
     apiKey: "AIzaSyBr0vNOfIeX7rmvFnUhHol44RIY5opsvG4",
@@ -30,7 +30,7 @@ const ITEMS = {
     ]
 }
 
-//AsyncStorage.clear();
+AsyncStorage.clear();
 
 
 class Store {
