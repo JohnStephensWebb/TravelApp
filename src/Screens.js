@@ -5,7 +5,7 @@ import ListScreen from './ListScreen';
 
 export class ClimatesScreen extends Component {
     static navigationOptions = {
-        title: "Going somewhere?"
+        title: "Where Should We Go?"
     }
 
     static Climates = ["Tropical", "Arid", "Temperate", "Continental", "Arctic"]
@@ -28,7 +28,7 @@ export class ClimatesScreen extends Component {
 
 export class AreasScreen extends Component {
     static navigationOptions = ({ navigation }) => ({
-        title: `A ${navigation.state.params.climate.toLowerCase()} what?`
+        title: `A ${navigation.state.params.climate.toUpperCase()} ...?`
     })
 
     static Areas = ["Mountain", "Forest", "City", "Town", "Coast"]
@@ -59,7 +59,7 @@ export class AreasScreen extends Component {
 
 export class AccomodationsScreen extends Component {
     static navigationOptions = {
-        title: "Where are you staying?"
+        title: "Where Should We Stay?"
     }
 
     static Accomodations = ["Hotel", "Camp", "Glamp", "Apartment", "Couch"]
